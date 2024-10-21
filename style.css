@@ -11,7 +11,8 @@ body{
 }
 
 .container{
-    padding: 10rem 7.5rem;
+    padding: 5rem 7.5rem;
+    text-align: center;
 }
 
 h1{
@@ -25,25 +26,81 @@ h2{
     font-weight: 800;
     line-height: 2rem;
     margin: 0px;
-    
 }
 
+/*area de Apreseentação */
 #seçao_Apresentação{
+
     background-image: url(./imagens/Rectangle\ 1.png) ;
     text-align: justify;
     padding: 2.5rem 7.5rem;
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #Apresentação{
-    width: 37.5rem;
-    position: relative;
-    top: calc(50% - 9.125rem) ;
-
+    width: 37.5rem; 
 }
 
+/*area de qualiades */
+#qualidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#qualidades > img {
+    margin: 0 2.5rem;
+}
+
+/*area de post */
+.post{
+    display: flex;
+}
+.post-div > button{
+    background-color: #F84646;
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    border: 0px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out, transform 0.5s .2s;;
+}
+
+.post-div > button:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+.post:nth-child(even){
+    margin-top: 6rem;
+    flex-direction: row-reverse;
+    
+}
+
+.post-div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    margin: 0 2.5rem 1rem 0;
+    justify-content: space-between; 
+}
+
+.post:nth-child(even)> .post-div{
+    margin: 0 0 0 2.5rem;
+}
+
+/*area de Contato */
 #Contact{
     text-align: center;
 }
@@ -58,8 +115,8 @@ h2{
 #ButtonContact{
     background-color: #F84646;
     color: white;
-    width: 282px;
-    height: 70px;
+    width: 17.5rem;
+    height: 4.3rem;
     font-size: 1.5rem;
     font-weight: 500;
     margin-top: 2rem;
@@ -77,3 +134,9 @@ h2{
     opacity: 0.8;
     transform: scale(1.1);
 }
+
+.backGround-red{
+    background-color: #F84646;
+    color: white;
+}
+
